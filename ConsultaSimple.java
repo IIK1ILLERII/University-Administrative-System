@@ -4,7 +4,7 @@ import java.sql.*;
 public class ConsultaSimple {
 
     public static void main(String[] args) {
-        System.out.println("📊 MOSTRANDO ESTUDIANTES DESDE LA BASE DE DATOS");
+        System.out.println("MOSTRANDO ESTUDIANTES DESDE LA BASE DE DATOS");
         System.out.println("===============================================");
 
         String sql = "SELECT student_id, first_name, last_name, career, semester FROM students";
@@ -27,7 +27,8 @@ public class ConsultaSimple {
             }
 
         } catch (SQLException e) {
-            System.out.println("❌ Error: " + e.getMessage());
+            System.out.println("Error: " + e.getMessage());
         }
     }
+
 }
